@@ -1,5 +1,3 @@
-# web-nuestra
-
 A Next.js application bootstrapped with `create-next-app`.
 
 This repository contains the source code for the web-nuestra Next.js project. The app uses the App Router (app directory) and the `next/font` system for optimized font loading.
