@@ -1,102 +1,102 @@
-# web-nuestra
+# NUESTRA Platform
 
-A Next.js application bootstrapped with `create-next-app`.
+A multi-brand e-commerce ecosystem for streetwear and youth football equipment.
 
-This repository contains the source code for the web-nuestra Next.js project. The app uses the App Router (app directory) and the `next/font` system for optimized font loading.
+## Overview
+
+NUESTRA Platform consists of three main products:
+
+- **nuestra.com** - Streetwear Shop
+- **sport.nuestra.com** - Youth/Kids Football Equipment
+- **{fanpage}.nuestra.com** - Multi-tenant Fan Pages Platform
+
+## Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **Fonts:** Oswald + Barlow (optimized with `next/font`)
 
 ## Features
 
-- Next.js (App Router)
-- Automatic font optimization with `next/font`
-- Fast refresh and zero-config development
+- Responsive design for desktop and mobile
+- Product catalog with filters and search
+- Product detail pages with size selection
+- Sport section for youth football equipment
+- Modern UI with fast refresh development
 
-## Requirements
+## Getting Started
+
+### Prerequisites
 
 - Node.js 18 or newer
-- npm, yarn, pnpm, or bun (any package manager of your choice)
+- npm, yarn, pnpm, or bun
 
-## Getting started
-
-1. Install dependencies:
+### Installation
 
 ```bash
-# npm
+# Install dependencies
 npm install
 
-# or yarn
-yarn
-
-# or pnpm
-pnpm install
-
-# or bun
-bun install
-```
-
-2. Run the development server:
-
-```bash
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open http://localhost:3000 in your browser to see the app. The App Router's root page is at `app/page.js` — editing that file will update the page automatically.
+Open [http://localhost:3000](http://localhost:3000) to view the app.
 
-## Available scripts
+## Available Scripts
 
-- `dev` - run the development server
-- `build` - create an optimized production build
-- `start` - start the production server (after `build`)
-- `lint` - run ESLint (if configured)
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Create production build |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
 
-Run scripts via your package manager, for example `npm run build`.
-
-## Fonts
-
-This project uses `next/font` to optimize font loading (for example Geist or other fonts). See Next.js docs for customizing fonts: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
-
-## Environment variables
-
-If your project needs environment variables, add them to a `.env.local` file and ensure they are listed in `.gitignore`. Example:
+## Project Structure
 
 ```
-NEXT_PUBLIC_API_URL=https://api.example.com
+web-nuestra/
+├── app/                    # Next.js App Router pages
+│   ├── page.tsx           # Home page
+│   ├── shop/              # Shop pages
+│   ├── product/[id]/      # Product detail pages
+│   └── sport/             # Sport section
+├── components/            # React components
+│   ├── Header.tsx
+│   ├── Footer.tsx
+│   ├── ProductCard.tsx
+│   └── sport/             # Sport-specific components
+├── lib/                   # Utilities and data
+│   ├── products.ts
+│   └── sportProducts.ts
+├── public/                # Static assets
+│   └── images/            # Product and brand images
+└── docs/                  # Documentation
 ```
 
-## Deployment
+## Roadmap
 
-The easiest way to deploy this Next.js app is to use Vercel: https://vercel.com/new. See Next.js deployment docs for other options: https://nextjs.org/docs/app/building-your-application/deploying
-
-## Project structure (typical)
-
-- `app/` - Next.js App Router pages and layout
-- `public/` - static files served at the root
-- `styles/` - global and component styles
-- `package.json` - scripts and dependencies
-
-Adjust the structure notes to match this repository as needed.
+- [x] Streetwear shop (nuestra.com)
+- [ ] Sport equipment shop (sport.nuestra.com)
+- [ ] Multi-tenant fan pages platform
+- [ ] Supabase integration
+- [ ] Payment processing
 
 ## Contributing
 
-Contributions are welcome. To contribute:
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
-2. Create a feature branch
-3. Open a pull request with a clear description of changes
-
-## Resources
-
-- Next.js docs: https://nextjs.org/docs
-- Create Next App: https://github.com/vercel/next.js/tree/canary/packages/create-next-app
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## License
 
-Specify a license for the project by adding a `LICENSE` file. If you don't have one yet, consider using MIT or another license that fits your needs.
+This project is proprietary software. All rights reserved.
 
+## Contact
 
-(Original README content: This project was bootstrapped with `create-next-app`. Updated to add clearer setup instructions and structure.)
+For questions or feedback, please open an issue on GitHub.
