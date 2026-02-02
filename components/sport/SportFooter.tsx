@@ -161,7 +161,7 @@ export default function SportFooter() {
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-white/40 text-sm">
-              © 2025 NUESTRA APPAREL SRL. All rights reserved.
+              © {new Date().getFullYear()} NUESTRA APPAREL SRL. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm text-white/40">
               <Link href="/privacy" className="hover:text-white transition-colors">
