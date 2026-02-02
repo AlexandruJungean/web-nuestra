@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NUESTRA Sport | The Game is Ours",
     description: "Premium football equipment for kids and youth. The Game is Ours.",
-    creator: "@nuestra",
-    site: "@nuestra",
+    // creator: "@nuestra", // TODO: Add when social media is available
+    // site: "@nuestra",
   },
 };
 

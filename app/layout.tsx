@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Oswald, Barlow, Barlow_Condensed } from "next/font/google";
+import { OrganizationJsonLd, WebsiteJsonLd, StoreJsonLd } from "@/components/JsonLd";
 import "./globals.css";
 
 const oswald = Oswald({
@@ -103,8 +104,8 @@ export const metadata: Metadata = {
     title: "NUESTRA | The Street is Ours",
     description: "Premium streetwear brand born at the intersection of football, culture, and community.",
     // images: ["/og-image.jpg"],
-    creator: "@nuestra",
-    site: "@nuestra",
+    // creator: "@nuestra", // TODO: Add when social media is available
+    // site: "@nuestra",
   },
 
   // Icons
@@ -130,6 +131,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Structured Data for SEO */}
+        <OrganizationJsonLd />
+        <WebsiteJsonLd />
+        <StoreJsonLd />
+      </head>
       <body
         className={`${oswald.variable} ${barlow.variable} ${barlowCondensed.variable} antialiased`}
         style={{ fontFamily: "var(--font-barlow), system-ui, sans-serif" }}
