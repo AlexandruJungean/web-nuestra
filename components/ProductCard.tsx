@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +19,7 @@ interface ProductCardProps {
   index?: number;
 }
 
-export default function ProductCard({ product, index = 0 }: ProductCardProps) {
+function ProductCard({ product, index = 0 }: ProductCardProps) {
   const discount = product.originalPrice
     ? Math.round((1 - product.price / product.originalPrice) * 100)
     : 0;
@@ -128,4 +129,15 @@ export default function ProductCard({ product, index = 0 }: ProductCardProps) {
     </Link>
   );
 }
+
+// Memo to prevent unnecessary re-renders when parent updates
+export default memo(ProductCard, (prevProps, nextProps) => {
+  // Only re-render if product data changes
+  return (
+    prevProps.product.id === nextProps.product.id &&
+    prevProps.product.price === nextProps.product.price &&
+    prevProps.product.isSoldOut === nextProps.product.isSoldOut &&
+    prevProps.index === nextProps.index
+  );
+});
 

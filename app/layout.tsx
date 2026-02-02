@@ -132,6 +132,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preconnect to external domains for faster loading */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        
+        {/* DNS Prefetch for potential future integrations */}
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        
         {/* Structured Data for SEO */}
         <OrganizationJsonLd />
         <WebsiteJsonLd />

@@ -1,0 +1,43 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+# Next.js plugin for Netlify
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Short cache for images (1 hour) - allows quick updates
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# _next/static has hashed filenames, safe to cache longer
+[[headers]]
+  for = "/_next/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Short cache for favicon
+[[headers]]
+  for = "/*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Preload hints for critical resources
+[[headers]]
+  for = "/"
+  [headers.values]
+    Link = '''
+      </images/logo/Nuestra - Full Logo 1 - White.png>; rel=preload; as=image,
+      </images/WhatsApp Image 2025-09-24 at 11.34.55_ab64d190.jpg>; rel=preload; as=image
+    '''
