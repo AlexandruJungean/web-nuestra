@@ -162,6 +162,21 @@ export default function Footer() {
         </div>
       </div>
 
+      {/* Company Details */}
+      <div className="border-t border-white/10">
+        <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-white/30">
+            <span>NUESTRA APPAREL SRL</span>
+            <span className="hidden sm:inline">·</span>
+            <span>CUI: 42204219</span>
+            <span className="hidden sm:inline">·</span>
+            <span>Reg. Com.: J20/20000196059</span>
+            <span className="hidden sm:inline">·</span>
+            <span>EUID: ROONRC.J20/20000196059</span>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="border-t border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6">
@@ -180,6 +195,19 @@ export default function Footer() {
                 Cookies
               </Link>
             </div>
+          </div>
+          <div className="mt-4 text-center">
+            <p className="text-xs text-white/30">
+              Developed by{' '}
+              <a
+                href="https://alexjungean.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+              >
+                Alexandru Jungean
+              </a>
+            </p>
           </div>
         </div>
       </div>
