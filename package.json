@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test:e2e": "playwright test",
+    "test:accessibility": "playwright test --grep @accessibility",
+    "test:lighthouse": "lhci autorun"
   },
   "dependencies": {
     "next": "16.1.1",
@@ -14,6 +18,9 @@
     "react-dom": "19.2.3"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@lhci/cli": "^0.15.1",
+    "@playwright/test": "^1.62.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^25.0.3",
     "@types/react": "^19.2.7",
