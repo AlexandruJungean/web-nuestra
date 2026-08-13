@@ -18,11 +18,11 @@ export default function ShopLoading() {
           <div className="hidden md:block w-64 shrink-0 space-y-8">
             <div className="space-y-3">
               <div className="h-4 w-24 bg-white/10 rounded animate-pulse" />
-              {[...Array(6)].map((_, i) => (
+              {[72, 88, 64, 80, 96, 70].map((width) => (
                 <div
-                  key={i}
+                  key={width}
                   className="h-3 bg-white/5 rounded animate-pulse"
-                  style={{ width: `${60 + Math.random() * 40}%` }}
+                  style={{ width: `${width}%` }}
                 />
               ))}
             </div>

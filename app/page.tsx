@@ -88,13 +88,13 @@ export default function Home() {
               {[...Array(3)].map((_, i) => (
                 <div key={i} className="flex items-center gap-8 whitespace-nowrap">
                   <span>The Street is Ours</span>
-                  <span className="text-white/40">//</span>
+                  <span className="text-white/70">{"//"}</span>
                   <span>The Game is Ours</span>
-                  <span className="text-white/40">//</span>
+                  <span className="text-white/70">{"//"}</span>
                   <span>Asphalt Capsule 001</span>
-                  <span className="text-white/40">//</span>
+                  <span className="text-white/70">{"//"}</span>
                   <span>Free Shipping Over €100</span>
-                  <span className="text-white/40">//</span>
+                  <span className="text-white/70">{"//"}</span>
                 </div>
               ))}
             </div>
@@ -297,7 +297,7 @@ export default function Home() {
                 style={{ fontFamily: "var(--font-oswald)" }}
               >
                 Asphalt
-                <span className="text-burgundy-on-dark"> //</span>
+                <span className="text-burgundy-on-dark">{" //"}</span>
               </h2>
               <h3
                 className="text-3xl md:text-4xl font-bold text-white/60 uppercase tracking-tight mb-6"

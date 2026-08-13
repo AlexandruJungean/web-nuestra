@@ -190,9 +190,7 @@ export function ProductJsonLd({
       priceCurrency: "EUR",
       price: product.price,
       ...(product.originalPrice && {
-        priceValidUntil: new Date(
-          Date.now() + 30 * 24 * 60 * 60 * 1000
-        ).toISOString(),
+        priceValidUntil: "2027-12-31",
       }),
       availability: product.isSoldOut
         ? "https://schema.org/OutOfStock"

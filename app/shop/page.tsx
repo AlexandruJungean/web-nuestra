@@ -181,7 +181,7 @@ export default function ShopPage() {
                         >
                           {category.name}
                           {selectedCategory === category.id && (
-                            <span className="ml-2 text-[#722F37]">//</span>
+                            <span className="ml-2 text-[#722F37]">{"//"}</span>
                           )}
                         </button>
                       </li>
@@ -351,7 +351,7 @@ export default function ShopPage() {
                     >
                       {category.name}
                       {selectedCategory === category.id && (
-                        <span className="ml-2 text-[#722F37]">//</span>
+                        <span className="ml-2 text-[#722F37]">{"//"}</span>
                       )}
                     </button>
                   </li>

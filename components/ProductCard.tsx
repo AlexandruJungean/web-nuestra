@@ -19,17 +19,13 @@ interface ProductCardProps {
   index?: number;
 }
 
-function ProductCard({ product, index = 0 }: ProductCardProps) {
+function ProductCard({ product }: ProductCardProps) {
   const discount = product.originalPrice
     ? Math.round((1 - product.price / product.originalPrice) * 100)
     : 0;
 
   return (
-    <Link
-      href={`/product/${product.id}`}
-      className="group block product-card animate-fade-in-up"
-      style={{ animationDelay: `${index * 100}ms`, opacity: 0 }}
-    >
+    <Link href={`/product/${product.id}`} className="group block product-card">
       {/* Image Container */}
       <div className="relative aspect-[3/4] overflow-hidden bg-[#1a1a1a]">
         {/* Main Image */}
@@ -136,8 +132,7 @@ export default memo(ProductCard, (prevProps, nextProps) => {
   return (
     prevProps.product.id === nextProps.product.id &&
     prevProps.product.price === nextProps.product.price &&
-    prevProps.product.isSoldOut === nextProps.product.isSoldOut &&
-    prevProps.index === nextProps.index
+    prevProps.product.isSoldOut === nextProps.product.isSoldOut
   );
 });
 

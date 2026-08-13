@@ -15,7 +15,7 @@ const FooterSkeleton = () => (
           <div key={i} className="space-y-3">
             <div className="h-4 w-20 bg-white/10 rounded" />
             {[...Array(5)].map((_, j) => (
-              <div key={j} className="h-3 bg-white/5 rounded" style={{ width: `${60 + Math.random() * 30}%` }} />
+              <div key={j} className="h-3 bg-white/5 rounded" style={{ width: `${65 + ((j * 11) % 25)}%` }} />
             ))}
           </div>
         ))}
@@ -36,7 +36,7 @@ const SportFooterSkeleton = () => (
           <div key={i} className="space-y-3">
             <div className="h-4 w-20 bg-white/10 rounded" />
             {[...Array(5)].map((_, j) => (
-              <div key={j} className="h-3 bg-white/5 rounded" style={{ width: `${60 + Math.random() * 30}%` }} />
+              <div key={j} className="h-3 bg-white/5 rounded" style={{ width: `${65 + ((j * 11) % 25)}%` }} />
             ))}
           </div>
         ))}
