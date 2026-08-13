@@ -165,7 +165,7 @@ export default function Footer() {
       {/* Company Details */}
       <div className="border-t border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6">
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-white/30">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-1 text-xs text-white/60">
             <span>NUESTRA APPAREL SRL</span>
             <span className="hidden sm:inline">·</span>
             <span>CUI: 42204219</span>
@@ -181,10 +181,10 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-white/40 text-sm">
+            <p className="text-white/60 text-sm">
               © {new Date().getFullYear()} NUESTRA APPAREL SRL. All rights reserved.
             </p>
-            <div className="flex items-center gap-6 text-sm text-white/40">
+            <div className="flex items-center gap-6 text-sm text-white/60">
               <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
               </Link>
@@ -197,7 +197,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="mt-4 text-center">
-            <p className="text-xs text-white/30">
+            <p className="text-xs text-white/60">
               Developed by{' '}
               <a
                 href="https://alexjungean.com"

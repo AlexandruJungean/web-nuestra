@@ -14,6 +14,8 @@
   /* Brand Colors */
   --color-burgundy: #722F37;
   --color-burgundy-dark: #5a252c;
+  /* WCAG AA 4.5:1 on #0a0a0a (same hue as burgundy) */
+  --color-burgundy-on-dark: #c45c66;
   --color-navy: #1a2a3a;
   --color-navy-light: #2d4a5e;
   
@@ -409,6 +411,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .text-burgundy {
   color: var(--color-burgundy);
+}
+
+.text-burgundy-on-dark {
+  color: var(--color-burgundy-on-dark);
 }
 
 .text-navy {

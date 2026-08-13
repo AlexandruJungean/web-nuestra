@@ -107,7 +107,7 @@ export default function Home() {
             {/* Section Header */}
             <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
               <div>
-                <p className="text-[#722F37] text-sm uppercase tracking-[0.2em] mb-2" style={{ fontFamily: "var(--font-oswald)" }}>
+                <p className="text-burgundy-on-dark text-sm uppercase tracking-[0.2em] mb-2" style={{ fontFamily: "var(--font-oswald)" }}>
                   New Arrivals
                 </p>
                 <h2
@@ -211,7 +211,7 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Content */}
               <div className="order-2 lg:order-1">
-                <p className="text-[#722F37] text-sm uppercase tracking-[0.2em] mb-4" style={{ fontFamily: "var(--font-oswald)" }}>
+                <p className="text-burgundy-on-dark text-sm uppercase tracking-[0.2em] mb-4" style={{ fontFamily: "var(--font-oswald)" }}>
                   Our Story
                 </p>
                 <h2
@@ -297,7 +297,7 @@ export default function Home() {
                 style={{ fontFamily: "var(--font-oswald)" }}
               >
                 Asphalt
-                <span className="text-[#722F37]"> //</span>
+                <span className="text-burgundy-on-dark"> //</span>
               </h2>
               <h3
                 className="text-3xl md:text-4xl font-bold text-white/60 uppercase tracking-tight mb-6"
@@ -395,7 +395,7 @@ export default function Home() {
         <section className="py-24 bg-[#0a0a0a]">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="text-center mb-12">
-              <p className="text-[#722F37] text-sm uppercase tracking-[0.2em] mb-2" style={{ fontFamily: "var(--font-oswald)" }}>
+              <p className="text-burgundy-on-dark text-sm uppercase tracking-[0.2em] mb-2" style={{ fontFamily: "var(--font-oswald)" }}>
                 @nuestra
               </p>
               <h2
@@ -470,7 +470,7 @@ function ValueCard({
       >
         {title}
       </h3>
-      <p className="text-white/50 text-sm">{description}</p>
+      <p className="text-white/60 text-sm">{description}</p>
     </div>
   );
 }

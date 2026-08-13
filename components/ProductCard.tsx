@@ -106,7 +106,7 @@ function ProductCard({ product, index = 0 }: ProductCardProps) {
 
       {/* Product Info */}
       <div className="py-4 px-1">
-        <p className="text-white/50 text-xs uppercase tracking-wider mb-1">
+        <p className="text-white/60 text-xs uppercase tracking-wider mb-1">
           {product.category}
         </p>
         <h3
@@ -120,7 +120,7 @@ function ProductCard({ product, index = 0 }: ProductCardProps) {
             €{product.price.toFixed(2)}
           </span>
           {product.originalPrice && (
-            <span className="text-white/40 line-through text-sm">
+            <span className="text-white/60 line-through text-sm">
               €{product.originalPrice.toFixed(2)}
             </span>
           )}
